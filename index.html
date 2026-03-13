@@ -446,19 +446,26 @@
     async function fetchRepos() {
       try {
         await loadConfig();
-        const all = [];
-        for (const user of config.users) {
-          const url = `https://api.github.com/users/${encodeURIComponent(user)}/repos?per_page=100&sort=updated`;
-          const res = await fetch(url);
-          if (!res.ok) throw new Error(`${user}: ${res.status}`);
-          const repos = await res.json();
-          repos.forEach(r => {
-            if (!r.fork) all.push(r);
-          });
+        const res = await fetch('projects.json');
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data) && data.length) {
+            allRepos = data;
+          }
         }
-        const byFullName = {};
-        all.forEach(r => { byFullName[r.full_name] = r; });
-        allRepos = Object.values(byFullName);
+        if (allRepos.length === 0) {
+          const all = [];
+          for (const user of config.users) {
+            const url = `https://api.github.com/users/${encodeURIComponent(user)}/repos?per_page=100&sort=updated`;
+            const r = await fetch(url);
+            if (!r.ok) throw new Error(`${user}: ${r.status}`);
+            const repos = await r.json();
+            repos.filter(repo => !repo.fork).forEach(repo => all.push(repo));
+          }
+          const byFullName = {};
+          all.forEach(r => { byFullName[r.full_name] = r; });
+          allRepos = Object.values(byFullName);
+        }
         if (config.onlyRepos && config.onlyRepos.length) {
           const set = new Set(config.onlyRepos.map(s => s.toLowerCase()));
           allRepos = allRepos.filter(r => set.has(r.full_name.toLowerCase()));
