@@ -4,7 +4,7 @@
     "name": "gorstak-site",
     "description": "Static site for gorstak.eu. Projects are loaded dynamically from GitHub.",
     "language": "HTML",
-    "updated_at": "2026-03-13T06:02:17Z",
+    "updated_at": "2026-03-13T06:02:26Z",
     "size": 34,
     "default_branch": "main",
     "latestReleaseUrl": null
