@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gorstak — Projects</title>
+  <meta name="description" content="Open-source security tools, system utilities, and scripts by Gorstak.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0e17;
+      --surface: #111827;
+      --surface-hover: #1a2335;
+      --border: #1e293b;
+      --text: #e2e8f0;
+      --text-dim: #94a3b8;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --green: #22c55e;
+      --tag-bg: #1e293b;
+      --tag-text: #94a3b8;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      background: rgba(10, 14, 23, 0.9);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .logo span { color: var(--accent); }
+
+    .search-box {
+      flex: 1;
+      max-width: 480px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.6rem 1rem 0.6rem 2.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus { border-color: var(--accent); }
+
+    .search-box svg {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      width: 16px;
+      height: 16px;
+    }
+
+    .stats {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    .stats strong { color: var(--green); }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    .filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+      padding: 0.35rem 0.85rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover { border-color: var(--accent); color: var(--text); }
+    .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      background: var(--surface-hover);
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .card-name:hover { text-decoration: underline; }
+
+    .card-lang {
+      padding: 0.2rem 0.6rem;
+      background: var(--tag-bg);
+      border-radius: 12px;
+      font-size: 0.7rem;
+      color: var(--tag-text);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .card-desc {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      line-height: 1.5;
+      flex: 1;
+      margin-bottom: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+
+    .card-meta {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 0.85rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .download-btn:hover { background: var(--accent-hover); }
+
+    .download-btn svg { width: 14px; height: 14px; }
+
+    .btn-group {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .download-btn.outline {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+    .download-btn.outline:hover { background: var(--surface-hover); color: var(--text); }
+
+    .loading {
+      text-align: center;
+      padding: 4rem 0;
+      color: var(--text-dim);
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .empty {
+      text-align: center;
+      padding: 4rem 0;
+      color: var(--text-dim);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2.5rem 1.5rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero p {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .links-bar {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .link-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      color: var(--text);
+      font-size: 0.82rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .link-pill:hover {
+      border-color: var(--accent);
+      background: var(--surface-hover);
+      color: var(--accent);
+    }
+
+    .link-pill svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .footer a { color: var(--accent); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
+      .header-inner { flex-direction: column; align-items: stretch; }
+      .search-box { max-width: 100%; }
+      .logo { justify-content: center; }
+      .stats { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">🛡️ <span>gorstak</span>.eu</a>
+      <div class="search-box">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+        <input type="text" id="search" placeholder="Search projects..." autocomplete="off">
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Goran Stambuk</h1>
+    <p>Security tools, system utilities &amp; scripts</p>
+    <div class="links-bar">
+      <a class="link-pill" href="https://github.com/Gorstak-Zadar" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a class="link-pill" href="https://www.mediafire.com/folder/pjwf43kf1at9t/Gorstak" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        MediaFire
+      </a>
+      <a class="link-pill" href="https://www.instagram.com/goranstambukzadar/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        Instagram
+      </a>
+      <a class="link-pill" href="https://www.facebook.com/profile.php?id=61587074800728" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+      <a class="link-pill" href="https://x.com/stambuk_goran" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        X
+      </a>
+      <a class="link-pill" href="https://www.reddit.com/user/Gorstak-Zadar/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 0-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+        Reddit
+      </a>
+      <a class="link-pill" href="https://www.forum.hr/member.php?u=558590" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Forum.hr
+      </a>
+      <a class="link-pill" href="https://gorstak-zadar.github.io/GorstaksAI/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 10v2m0 4h.01M8 16a4 4 0 0 0 8 0c0-1.1-.9-2-2-2h-4a2 2 0 0 0-2 2z"/><circle cx="12" cy="12" r="10"/></svg>
+        GorstaksAI
+      </a>
+      <a class="link-pill" href="https://love4.free.nf/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        Love4Free
+      </a>
+    </div>
+  </section>
+
+  <main class="container">
+    <p class="section-title">Projects</p>
+    <div class="filters" id="filters"></div>
+    <div id="content">
+      <div class="loading">
+        <div class="spinner"></div>
+        Loading projects...
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Goran Stambuk &middot; Hosted in the EU &middot; <a href="https://github.com/Gorstak-Zadar">GitHub</a></p>
+  </footer>
+
+  <script>
+    const DEFAULT_CONFIG = {
+      users: ['Gorstak-Zadar'],
+      onlyRepos: null,
+      excludeRepos: null
+    };
+
+    let allRepos = [];
+    let activeFilter = 'all';
+    let config = { ...DEFAULT_CONFIG };
+
+    async function loadConfig() {
+      try {
+        const res = await fetch('repos.json');
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data.users) && data.users.length) config.users = data.users;
+          if (data.onlyRepos != null) config.onlyRepos = Array.isArray(data.onlyRepos) ? data.onlyRepos : null;
+          if (data.excludeRepos != null) config.excludeRepos = Array.isArray(data.excludeRepos) ? data.excludeRepos : null;
+        }
+      } catch (_) { /* use defaults */ }
+    }
+
+    async function fetchRepos() {
+      try {
+        await loadConfig();
+        const all = [];
+        for (const user of config.users) {
+          const url = `https://api.github.com/users/${encodeURIComponent(user)}/repos?per_page=100&sort=updated`;
+          const res = await fetch(url);
+          if (!res.ok) throw new Error(`${user}: ${res.status}`);
+          const repos = await res.json();
+          repos.forEach(r => {
+            if (!r.fork) all.push(r);
+          });
+        }
+        const byFullName = {};
+        all.forEach(r => { byFullName[r.full_name] = r; });
+        allRepos = Object.values(byFullName);
+        if (config.onlyRepos && config.onlyRepos.length) {
+          const set = new Set(config.onlyRepos.map(s => s.toLowerCase()));
+          allRepos = allRepos.filter(r => set.has(r.full_name.toLowerCase()));
+        }
+        if (config.excludeRepos && config.excludeRepos.length) {
+          const set = new Set(config.excludeRepos.map(s => s.toLowerCase()));
+          allRepos = allRepos.filter(r => !set.has(r.full_name.toLowerCase()));
+        }
+        allRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        await fetchReleaseInfo();
+        buildFilters();
+        render();
+      } catch (err) {
+        document.getElementById('content').innerHTML =
+          `<div class="empty"><p>Failed to load projects. Try refreshing.</p><p style="margin-top:0.5rem;font-size:0.8rem">${err.message}</p></div>`;
+      }
+    }
+
+    async function fetchReleaseInfo() {
+      const batch = 8;
+      for (let i = 0; i < allRepos.length; i += batch) {
+        const chunk = allRepos.slice(i, i + batch);
+        await Promise.all(chunk.map(async (r) => {
+          try {
+            const res = await fetch(`https://api.github.com/repos/${r.full_name}/releases/latest`);
+            if (res.ok) {
+              const rel = await res.json();
+              r.latestReleaseUrl = rel.html_url || null;
+            } else r.latestReleaseUrl = null;
+          } catch (_) { r.latestReleaseUrl = null; }
+        }));
+      }
+    }
+
+    function buildFilters() {
+      const langs = {};
+      allRepos.forEach(r => {
+        const lang = r.language || 'Other';
+        langs[lang] = (langs[lang] || 0) + 1;
+      });
+
+      const sorted = Object.entries(langs).sort((a, b) => b[1] - a[1]);
+      const container = document.getElementById('filters');
+
+      let html = `<button class="filter-btn active" data-lang="all">All (${allRepos.length})</button>`;
+      sorted.forEach(([lang, count]) => {
+        html += `<button class="filter-btn" data-lang="${lang}">${lang} (${count})</button>`;
+      });
+      container.innerHTML = html;
+
+      container.addEventListener('click', (e) => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.lang;
+        render();
+      });
+    }
+
+    function render() {
+      const query = document.getElementById('search').value.toLowerCase().trim();
+      let filtered = allRepos;
+
+      if (activeFilter !== 'all') {
+        filtered = filtered.filter(r => (r.language || 'Other') === activeFilter);
+      }
+
+      if (query) {
+        filtered = filtered.filter(r =>
+          r.name.toLowerCase().includes(query) ||
+          (r.description || '').toLowerCase().includes(query) ||
+          (r.language || '').toLowerCase().includes(query)
+        );
+      }
+
+      document.getElementById('stats').innerHTML = `Showing <strong>${filtered.length}</strong> of ${allRepos.length} projects`;
+
+      if (filtered.length === 0) {
+        document.getElementById('content').innerHTML = `<div class="empty">No projects match your search.</div>`;
+        return;
+      }
+
+      const cards = filtered.map(r => {
+        const lang = r.language || 'Unknown';
+        const desc = r.description || 'No description provided.';
+        const updated = new Date(r.updated_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+        const zipUrl = `https://github.com/${r.full_name}/archive/refs/heads/${r.default_branch}.zip`;
+        const sizeKB = r.size;
+        const sizeLabel = sizeKB >= 1024 ? `${(sizeKB / 1024).toFixed(1)} MB` : `${sizeKB} KB`;
+
+        const releaseBtn = r.latestReleaseUrl
+          ? `<a class="download-btn outline" href="${r.latestReleaseUrl}" target="_blank" rel="noopener" title="Latest release">Release</a>`
+          : '';
+        return `
+          <div class="card">
+            <div class="card-header">
+              <a class="card-name" href="https://github.com/${r.full_name}" target="_blank" rel="noopener">${r.name}</a>
+              <span class="card-lang">${lang}</span>
+            </div>
+            <p class="card-desc">${desc}</p>
+            <div class="card-footer">
+              <span class="card-meta">${sizeLabel} · Updated ${updated}</span>
+              <div class="btn-group">
+                ${releaseBtn}
+                <a class="download-btn" href="${zipUrl}" download>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                  ZIP
+                </a>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+
+      document.getElementById('content').innerHTML = `<div class="grid">${cards}</div>`;
+    }
+
+    document.getElementById('search').addEventListener('input', render);
+    fetchRepos();
+  </script>
+</body>
+</html>
