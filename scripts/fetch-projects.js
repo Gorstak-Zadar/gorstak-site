@@ -39,9 +39,14 @@ async function main() {
 
   const all = [];
   for (const user of config.users) {
-    const url = `https://api.github.com/users/${encodeURIComponent(user)}/repos?per_page=100&sort=updated`;
-    const repos = await fetchJson(url, token);
-    repos.filter(r => !r.fork).forEach(r => all.push(r));
+    let page = 1;
+    let repos;
+    do {
+      const url = `https://api.github.com/users/${encodeURIComponent(user)}/repos?per_page=100&sort=updated&page=${page}`;
+      repos = await fetchJson(url, token);
+      repos.filter(r => !r.fork).forEach(r => all.push(r));
+      page++;
+    } while (repos.length === 100);
   }
 
   const byFullName = {};
