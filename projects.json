@@ -2,10 +2,70 @@
   {
     "full_name": "Gorstak-Zadar/gorstak-site",
     "name": "gorstak-site",
-    "description": "Static site for gorstak.eu. Projects are loaded from a pre-built file (no GitHub API calls from the browser, avoiding rate limits).",
+    "description": "Static site for gorstak.eu. Projects are loaded dynamically from GitHub.",
     "language": "HTML",
-    "updated_at": "2026-03-13T05:57:26Z",
+    "updated_at": "2026-03-13T06:02:17Z",
     "size": 34,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/GEDR",
+    "name": "GEDR",
+    "description": "Gorstak Endpoint Detection and Response - detection and hardening modules, hash lookup, YARA scanning, behavioral detection, WMI protection",
+    "language": "C#",
+    "updated_at": "2026-03-13T06:00:14Z",
+    "size": 2375,
+    "default_branch": "main",
+    "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GEDR/releases/tag/v13.5.0"
+  },
+  {
+    "full_name": "Gorstak-Zadar/GSecurity",
+    "name": "GSecurity",
+    "description": "<p align=center>",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T05:59:49Z",
+    "size": 5230,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/GShield",
+    "name": "GShield",
+    "description": "<div align=center>",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T05:59:49Z",
+    "size": 868,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/ExperienceNormalizer",
+    "name": "ExperienceNormalizer",
+    "description": "<div align=center>",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T05:59:43Z",
+    "size": 11,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/AgentsAntivirus",
+    "name": "AgentsAntivirus",
+    "description": "<p align=center>",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T05:59:30Z",
+    "size": 251,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Antivirus",
+    "name": "Antivirus",
+    "description": "<div align=center>",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T05:59:30Z",
+    "size": 773,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -360,26 +420,6 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/GSecurity",
-    "name": "GSecurity",
-    "description": "A comprehensive Windows security hardening and protection suite - enterprise-grade EDR, 70+ modules, automated threat response",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:16Z",
-    "size": 5230,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
-    "full_name": "Gorstak-Zadar/GShield",
-    "name": "GShield",
-    "description": "Lightweight Windows Security Toolkit - PowerShell-based antivirus and threat detection with real-time monitoring and behavioral analysis",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:16Z",
-    "size": 868,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/GSecurityBaseline",
     "name": "GSecurityBaseline",
     "description": "Windows Security Baseline - Group Policy templates and scripts for export/import of security policies.",
@@ -438,16 +478,6 @@
     "size": 20,
     "default_branch": "main",
     "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GBrowser/releases/tag/5.2"
-  },
-  {
-    "full_name": "Gorstak-Zadar/GEDR",
-    "name": "GEDR",
-    "description": "Gorstak Endpoint Detection and Response - detection & hardening modules, hash lookup, YARA scanning, behavioral detection, WMI protection",
-    "language": "C#",
-    "updated_at": "2026-03-13T04:17:11Z",
-    "size": 2375,
-    "default_branch": "main",
-    "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GEDR/releases/tag/v13.5.0"
   },
   {
     "full_name": "Gorstak-Zadar/GamingScripts",
@@ -636,36 +666,6 @@
     "language": "AutoHotkey",
     "updated_at": "2026-03-13T04:16:57Z",
     "size": 2,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
-    "full_name": "Gorstak-Zadar/AgentsAntivirus",
-    "name": "AgentsAntivirus",
-    "description": "Standalone Security Detection Agents - PowerShell agents from GEDR, zero dependencies, run anywhere",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:16:56Z",
-    "size": 251,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
-    "full_name": "Gorstak-Zadar/ExperienceNormalizer",
-    "name": "ExperienceNormalizer",
-    "description": "Windows audio tool that captures, normalizes, and enhances system audio in real-time",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:14:54Z",
-    "size": 11,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
-    "full_name": "Gorstak-Zadar/Antivirus",
-    "name": "Antivirus",
-    "description": "Single-file, zero-dependency real-time antivirus and EDR for Windows with 67+ detection modules, MITRE ATT&CK mapping, and automated threat response",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:14:42Z",
-    "size": 773,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -996,6 +996,46 @@
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:01:31Z",
     "size": 4,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Bookmarks",
+    "name": "Bookmarks",
+    "description": "A curated collection of browser bookmarks with a PowerShell utility to optimize file size by removing embedded icons.",
+    "language": "HTML",
+    "updated_at": "2026-03-13T03:56:58Z",
+    "size": 207,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Patcher",
+    "name": "Patcher",
+    "description": "Script that fetches CISA Known Exploited Vulnerabilities (KEV) and applies scriptable mitigations for new CVEs without waiting for Windows Update.",
+    "language": "PowerShell",
+    "updated_at": "2026-03-05T14:38:30Z",
+    "size": 20,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/RamCleaner",
+    "name": "RamCleaner",
+    "description": "A lightweight, efficient RAM optimization tool for Windows that continuously clears standby memory to keep your system running smoothly. Perfect for systems with limited RAM or when running memory-intensive applications.",
+    "language": "Batchfile",
+    "updated_at": "2026-03-05T14:37:16Z",
+    "size": 82,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Vacuum",
+    "name": "Vacuum",
+    "description": "A powerful SQLite database maintenance and network repair utility for Windows. Automatically backs up, exports, and optimizes your SQLite databases while also performing comprehensive network diagnostics and repairs.",
+    "language": "Batchfile",
+    "updated_at": "2026-03-05T14:33:14Z",
+    "size": 1680,
     "default_branch": "main",
     "latestReleaseUrl": null
   }
