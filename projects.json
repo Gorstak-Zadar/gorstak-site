@@ -4,8 +4,8 @@
     "name": "gorstak-site",
     "description": "Static site for gorstak.eu. Projects are loaded from a pre-built file (no GitHub API calls from the browser, avoiding rate limits).",
     "language": "HTML",
-    "updated_at": "2026-03-13T04:35:27Z",
-    "size": 7,
+    "updated_at": "2026-03-13T05:14:23Z",
+    "size": 34,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -25,7 +25,7 @@
     "description": "Bulk-updates GitHub repository descriptions from a dedicated block in each README.md.",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:18:56Z",
-    "size": 0,
+    "size": 4,
     "default_branch": "master",
     "latestReleaseUrl": null
   },
