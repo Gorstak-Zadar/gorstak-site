@@ -1,10 +1,20 @@
 [
   {
+    "full_name": "Gorstak-Zadar/Gorstak-Zadar",
+    "name": "Gorstak-Zadar",
+    "description": "Profile README",
+    "language": null,
+    "updated_at": "2026-03-13T04:31:33Z",
+    "size": 0,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
     "full_name": "Gorstak-Zadar/gorstak-site",
     "name": "gorstak-site",
     "description": "Static site for gorstak.eu. Projects are loaded from a pre-built file (no GitHub API calls from the browser, avoiding rate limits).",
     "language": "HTML",
-    "updated_at": "2026-03-13T04:22:27Z",
+    "updated_at": "2026-03-13T04:22:40Z",
     "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
@@ -40,22 +50,22 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Spoofer",
-    "name": "Spoofer",
-    "description": "Python privacy/fingerprint spoofing tool - Faker identity, software metadata spoofing, fake sites, clipboard, audio, screen resolution, MAC address, timezone. Uses pyautogui, OpenCV, sounddevice, Faker.",
-    "language": "Python",
-    "updated_at": "2026-03-13T04:17:34Z",
-    "size": 6,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/Stripper",
     "name": "Stripper",
     "description": "Ultimate Windows ISO Debloater - PowerShell interactive script using wimlib, NTLite preset XML. Mount ISO, apply debloat, rebuild.",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:34Z",
     "size": 5,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Spoofer",
+    "name": "Spoofer",
+    "description": "Python privacy/fingerprint spoofing tool - Faker identity, software metadata spoofing, fake sites, clipboard, audio, screen resolution, MAC address, timezone. Uses pyautogui, OpenCV, sounddevice, Faker.",
+    "language": "Python",
+    "updated_at": "2026-03-13T04:17:34Z",
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -70,16 +80,6 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Secpol",
-    "name": "Secpol",
-    "description": "PowerShell script to harden privilege rights via secedit - SeDenyNetworkLogonRight, SeDenyRemoteInteractiveLogonRight, SeDenyRemoteLogonRight for *S-1-5-11 (Users). Clears SeRemoteShutdownPrivilege, SeRemoteLogonRight, etc.",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:32Z",
-    "size": 2,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/SecureRemoteAccess",
     "name": "SecureRemoteAccess",
     "description": "PowerShell script to harden Windows remote access - disable RDP, Remote Assistance, block RDP/VNC/TeamViewer/AnyDesk ports, disable Administrator account, restrict remote software, disable UPnP, enable Defender.",
@@ -90,12 +90,12 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Retaliate",
-    "name": "Retaliate",
-    "description": "PowerShell threat response/retaliation script - automated response to detected threats (part of GSecurity suite).",
+    "full_name": "Gorstak-Zadar/Secpol",
+    "name": "Secpol",
+    "description": "PowerShell script to harden privilege rights via secedit - SeDenyNetworkLogonRight, SeDenyRemoteInteractiveLogonRight, SeDenyRemoteLogonRight for *S-1-5-11 (Users). Clears SeRemoteShutdownPrivilege, SeRemoteLogonRight, etc.",
     "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:31Z",
-    "size": 6,
+    "updated_at": "2026-03-13T04:17:32Z",
+    "size": 2,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -110,12 +110,12 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/PiHole",
-    "name": "PiHole",
-    "description": "PowerShell system-wide ad blocker for Windows - uses DNS policy and persistent routes. Downloads EasyList, EasyPrivacy, AdGuard filters.",
+    "full_name": "Gorstak-Zadar/Retaliate",
+    "name": "Retaliate",
+    "description": "PowerShell threat response/retaliation script - automated response to detected threats (part of GSecurity suite).",
     "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:28Z",
-    "size": 759,
+    "updated_at": "2026-03-13T04:17:31Z",
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -126,6 +126,16 @@
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:28Z",
     "size": 3,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/PiHole",
+    "name": "PiHole",
+    "description": "PowerShell system-wide ad blocker for Windows - uses DNS policy and persistent routes. Downloads EasyList, EasyPrivacy, AdGuard filters.",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T04:17:28Z",
+    "size": 759,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -150,6 +160,16 @@
     "latestReleaseUrl": null
   },
   {
+    "full_name": "Gorstak-Zadar/Ozempic",
+    "name": "Ozempic",
+    "description": "Batch script - Windows Update / SoftwareDistribution cleanup - stops wuauserv/BITS, deletes SoftwareDistribution, DISM component cleanup, ResetBase.",
+    "language": "Batchfile",
+    "updated_at": "2026-03-13T04:17:26Z",
+    "size": 3,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
     "full_name": "Gorstak-Zadar/Pac",
     "name": "Pac",
     "description": "PAC (Proxy Auto-Config) file or scripts - used for ad blocking (see ads-blocker/Pac) or proxy configuration.",
@@ -160,11 +180,11 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Ozempic",
-    "name": "Ozempic",
-    "description": "Batch script - Windows Update / SoftwareDistribution cleanup - stops wuauserv/BITS, deletes SoftwareDistribution, DISM component cleanup, ResetBase.",
-    "language": "Batchfile",
-    "updated_at": "2026-03-13T04:17:26Z",
+    "full_name": "Gorstak-Zadar/Null",
+    "name": "Null",
+    "description": "PowerShell script to disable NULL sessions for SMB - RestrictAnonymous, RestrictNullSessAccess. Also sets battery power plan.",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T04:17:25Z",
     "size": 3,
     "default_branch": "main",
     "latestReleaseUrl": null
@@ -180,11 +200,11 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Null",
-    "name": "Null",
-    "description": "PowerShell script to disable NULL sessions for SMB - RestrictAnonymous, RestrictNullSessAccess. Also sets battery power plan.",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:25Z",
+    "full_name": "Gorstak-Zadar/NetworkRepair",
+    "name": "NetworkRepair",
+    "description": "Batch script for network repair - NLA probing, BFE/Dnscache/MpsSvc/DHCP/DUSM services, adapter disable/enable cycle.",
+    "language": "Batchfile",
+    "updated_at": "2026-03-13T04:17:24Z",
     "size": 3,
     "default_branch": "main",
     "latestReleaseUrl": null
@@ -194,16 +214,6 @@
     "name": "NetworkDebloat",
     "description": "PowerShell script to disable unwanted network bindings - File Sharing, MS Client, QoS, LLTD, IPv6, etc. Runs at startup as SYSTEM.",
     "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:24Z",
-    "size": 3,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
-    "full_name": "Gorstak-Zadar/NetworkRepair",
-    "name": "NetworkRepair",
-    "description": "Batch script for network repair - NLA probing, BFE/Dnscache/MpsSvc/DHCP/DUSM services, adapter disable/enable cycle.",
-    "language": "Batchfile",
     "updated_at": "2026-03-13T04:17:24Z",
     "size": 3,
     "default_branch": "main",
@@ -220,12 +230,12 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Love4Free",
-    "name": "Love4Free",
-    "description": "PHP web application - profile system with install, database, helpers, create_profile.",
-    "language": "PHP",
+    "full_name": "Gorstak-Zadar/MiniFilterDrivers",
+    "name": "MiniFilterDrivers",
+    "description": "Batch script to unload and remove BFS and UnionFS minifilter drivers - , takeown, icacls, delete.",
+    "language": "Batchfile",
     "updated_at": "2026-03-13T04:17:22Z",
-    "size": 21,
+    "size": 2,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -240,12 +250,12 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/MiniFilterDrivers",
-    "name": "MiniFilterDrivers",
-    "description": "Batch script to unload and remove BFS and UnionFS minifilter drivers - , takeown, icacls, delete.",
-    "language": "Batchfile",
+    "full_name": "Gorstak-Zadar/Love4Free",
+    "name": "Love4Free",
+    "description": "PHP web application - profile system with install, database, helpers, create_profile.",
+    "language": "PHP",
     "updated_at": "2026-03-13T04:17:22Z",
-    "size": 2,
+    "size": 21,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -350,12 +360,12 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/GSecurity",
-    "name": "GSecurity",
-    "description": "A comprehensive Windows security hardening and protection suite - enterprise-grade EDR, 70+ modules, automated threat response",
-    "language": "PowerShell",
+    "full_name": "Gorstak-Zadar/GSecurityBaseline",
+    "name": "GSecurityBaseline",
+    "description": "Windows Security Baseline - Group Policy templates and scripts for export/import of security policies.",
+    "language": "Batchfile",
     "updated_at": "2026-03-13T04:17:16Z",
-    "size": 5230,
+    "size": 438,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -370,12 +380,12 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/GSecurityBaseline",
-    "name": "GSecurityBaseline",
-    "description": "Windows Security Baseline - Group Policy templates and scripts for export/import of security policies.",
-    "language": "Batchfile",
+    "full_name": "Gorstak-Zadar/GSecurity",
+    "name": "GSecurity",
+    "description": "A comprehensive Windows security hardening and protection suite - enterprise-grade EDR, 70+ modules, automated threat response",
+    "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:16Z",
-    "size": 438,
+    "size": 5230,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -420,14 +430,14 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/GBrowser",
-    "name": "GBrowser",
-    "description": "A lightweight, privacy-focused web browser built with Python and PyQt6 - featuring tabbed browsing, built-in ad blocking, credential management, and DLL injection protection.",
-    "language": "Python",
+    "full_name": "Gorstak-Zadar/GamingScripts",
+    "name": "GamingScripts",
+    "description": "Gaming-related PowerShell and Python scripts - Bufferbloat, savegame backup/restore, Infinity.BS, and more.",
+    "language": "Bikeshed",
     "updated_at": "2026-03-13T04:17:11Z",
-    "size": 20,
+    "size": 16,
     "default_branch": "main",
-    "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GBrowser/releases/tag/5.2"
+    "latestReleaseUrl": null
   },
   {
     "full_name": "Gorstak-Zadar/GEDR",
@@ -440,14 +450,14 @@
     "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GEDR/releases/tag/v13.5.0"
   },
   {
-    "full_name": "Gorstak-Zadar/GamingScripts",
-    "name": "GamingScripts",
-    "description": "Gaming-related PowerShell and Python scripts - Bufferbloat, savegame backup/restore, Infinity.BS, and more.",
-    "language": "Bikeshed",
+    "full_name": "Gorstak-Zadar/GBrowser",
+    "name": "GBrowser",
+    "description": "A lightweight, privacy-focused web browser built with Python and PyQt6 - featuring tabbed browsing, built-in ad blocking, credential management, and DLL injection protection.",
+    "language": "Python",
     "updated_at": "2026-03-13T04:17:11Z",
-    "size": 16,
+    "size": 20,
     "default_branch": "main",
-    "latestReleaseUrl": null
+    "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GBrowser/releases/tag/5.2"
   },
   {
     "full_name": "Gorstak-Zadar/Firewall",
@@ -470,22 +480,22 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/ElfCatcher",
-    "name": "ElfCatcher",
-    "description": "PowerShell script that detects and unloads (ELF-similar) DLLs injected into browsers - protection against surveillance/injection.",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:09Z",
-    "size": 3,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/ES",
     "name": "ES",
     "description": "PowerShell script that terminates non-console RDP/session logins - keeps only console (local) sessions. Runs as a background job every 5 seconds.",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:09Z",
     "size": 4,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/ElfCatcher",
+    "name": "ElfCatcher",
+    "description": "PowerShell script that detects and unloads (ELF-similar) DLLs injected into browsers - protection against surveillance/injection.",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T04:17:09Z",
+    "size": 3,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -500,22 +510,22 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/DevicesFiltering",
-    "name": "DevicesFiltering",
-    "description": "PowerShell script to list devices and set permissions using SetACL - restricts device registry access to Console Logon group only.",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:07Z",
-    "size": 299,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/DNSDoTDoH",
     "name": "DNSDoTDoH",
     "description": "Windows Encrypted DNS Configurator - PowerShell script for DNS over HTTPS (DoH) and DNS over TLS (DoT) with Cloudflare (primary) and Google (secondary).",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:07Z",
     "size": 5,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/DevicesFiltering",
+    "name": "DevicesFiltering",
+    "description": "PowerShell script to list devices and set permissions using SetACL - restricts device registry access to Console Logon group only.",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T04:17:07Z",
+    "size": 299,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -530,22 +540,22 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Creds",
-    "name": "Creds",
-    "description": "PowerShell script to harden local credential protection - LSASS PPL, credential caching, and cached logon controls.",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:17:05Z",
-    "size": 4,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/CrudePayloadGuard",
     "name": "CrudePayloadGuard",
     "description": "PowerShell script that monitors active TCP connections for hostnames containing - crude XSS/injection payload guard.",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:05Z",
     "size": 6,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Creds",
+    "name": "Creds",
+    "description": "PowerShell script to harden local credential protection - LSASS PPL, credential caching, and cached logon controls.",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T04:17:05Z",
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -590,9 +600,9 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/BrowserNetworkGuard",
-    "name": "BrowserNetworkGuard",
-    "description": "PowerShell local proxy that blocks all network connections except user-entered URLs and their dependencies - protecting against telemetry and unauthorized phone-homes.",
+    "full_name": "Gorstak-Zadar/Browsers",
+    "name": "Browsers",
+    "description": "PowerShell script to apply privacy and security settings to Chromium-based browsers (Chrome, Edge, etc.) - WebRTC, remote desktop, and plugins.",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:01Z",
     "size": 7,
@@ -600,9 +610,9 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Browsers",
-    "name": "Browsers",
-    "description": "PowerShell script to apply privacy and security settings to Chromium-based browsers (Chrome, Edge, etc.) - WebRTC, remote desktop, and plugins.",
+    "full_name": "Gorstak-Zadar/BrowserNetworkGuard",
+    "name": "BrowserNetworkGuard",
+    "description": "PowerShell local proxy that blocks all network connections except user-entered URLs and their dependencies - protecting against telemetry and unauthorized phone-homes.",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:17:01Z",
     "size": 7,
@@ -670,22 +680,22 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Unhooker",
-    "name": "Unhooker",
-    "description": "Advanced Windows API Unhooking Tool for Windows 11 26H1",
-    "language": "PowerShell",
-    "updated_at": "2026-03-13T04:02:12Z",
-    "size": 36,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/UniversalTime",
     "name": "UniversalTime",
     "description": "HTML page for universal/world time display or timezone conversion.",
     "language": "HTML",
     "updated_at": "2026-03-13T04:02:12Z",
     "size": 3,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Unhooker",
+    "name": "Unhooker",
+    "description": "Advanced Windows API Unhooking Tool for Windows 11 26H1",
+    "language": "PowerShell",
+    "updated_at": "2026-03-13T04:02:12Z",
+    "size": 36,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -860,22 +870,22 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/CScripts",
-    "name": "CScripts",
-    "description": "C scripts or C-based utilities for Gorstak projects.",
-    "language": null,
-    "updated_at": "2026-03-13T04:01:40Z",
-    "size": 1,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/CustomControlsRemover",
     "name": "CustomControlsRemover",
     "description": "PowerShell script to detect and remove InProcServer32/InprocHandler32 custom controls from the registry (WOW6432Node CLSID).",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:01:40Z",
     "size": 3,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/CScripts",
+    "name": "CScripts",
+    "description": "C scripts or C-based utilities for Gorstak projects.",
+    "language": null,
+    "updated_at": "2026-03-13T04:01:40Z",
+    "size": 1,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -950,22 +960,22 @@
     "latestReleaseUrl": null
   },
   {
-    "full_name": "Gorstak-Zadar/Backup",
-    "name": "Backup",
-    "description": "Python script to flatten a folder structure by moving all files from subfolders into a single target directory with deduplicated filenames.",
-    "language": "Python",
-    "updated_at": "2026-03-13T04:01:32Z",
-    "size": 4,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
     "full_name": "Gorstak-Zadar/AutorunsEnhanced",
     "name": "AutorunsEnhanced",
     "description": "Author: Gorstak | Part of the GEDR Security Suite",
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:01:32Z",
     "size": 3,
+    "default_branch": "main",
+    "latestReleaseUrl": null
+  },
+  {
+    "full_name": "Gorstak-Zadar/Backup",
+    "name": "Backup",
+    "description": "Python script to flatten a folder structure by moving all files from subfolders into a single target directory with deduplicated filenames.",
+    "language": "Python",
+    "updated_at": "2026-03-13T04:01:32Z",
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -986,16 +996,6 @@
     "language": "PowerShell",
     "updated_at": "2026-03-13T04:01:31Z",
     "size": 4,
-    "default_branch": "main",
-    "latestReleaseUrl": null
-  },
-  {
-    "full_name": "Gorstak-Zadar/Bookmarks",
-    "name": "Bookmarks",
-    "description": "A curated collection of browser bookmarks with a PowerShell utility to optimize file size by removing embedded icons.",
-    "language": "HTML",
-    "updated_at": "2026-03-13T03:56:58Z",
-    "size": 204,
     "default_branch": "main",
     "latestReleaseUrl": null
   }
