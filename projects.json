@@ -4,8 +4,8 @@
     "name": "gorstak-site",
     "description": "Static site for gorstak.eu. Projects are loaded dynamically from GitHub.",
     "language": "HTML",
-    "updated_at": "2026-03-15T05:18:49Z",
-    "size": 83,
+    "updated_at": "2026-03-15T05:19:02Z",
+    "size": 87,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -15,7 +15,7 @@
     "description": "Automated PowerShell script that configures YouTube ad blocking with zero user interaction required. Combines network-level blocking (PAC file) with JavaScript injection (local proxy) for comprehensive ad removal.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:26Z",
-    "size": 9,
+    "size": 10,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -25,7 +25,7 @@
     "description": "HTML page or web utility - in repo root.",
     "language": "HTML",
     "updated_at": "2026-03-15T05:16:26Z",
-    "size": 8,
+    "size": 9,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -45,7 +45,7 @@
     "description": "Bulk-updates GitHub repository descriptions from a dedicated block in each README.md.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:23Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "master",
     "latestReleaseUrl": null
   },
@@ -55,7 +55,7 @@
     "description": "HTML page for universal/world time display or timezone conversion.",
     "language": "HTML",
     "updated_at": "2026-03-15T05:16:22Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -65,7 +65,7 @@
     "description": "Advanced Windows API Unhooking Tool for Windows 11 26H1",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:21Z",
-    "size": 36,
+    "size": 37,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -75,7 +75,7 @@
     "description": "PowerShell script that removes network bridges - runs at logon via scheduled task. Includes Unbridge.cmd. Part of security/hardening.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:16:20Z",
-    "size": 326,
+    "size": 327,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -85,7 +85,7 @@
     "description": "Author: Gorstak | Part of the GEDR Security Suite",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:19Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -95,7 +95,7 @@
     "description": "Ultimate Windows ISO Debloater - PowerShell interactive script using wimlib, NTLite preset XML. Mount ISO, apply debloat, rebuild.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:17Z",
-    "size": 5,
+    "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -105,7 +105,7 @@
     "description": "Windows Store configuration, scripts, or debloat utilities.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:16:16Z",
-    "size": 2,
+    "size": 3,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -115,7 +115,7 @@
     "description": "Python privacy/fingerprint spoofing tool - Faker identity, software metadata spoofing, fake sites, clipboard, audio, screen resolution, MAC address, timezone. Uses pyautogui, OpenCV, sounddevice, Faker.",
     "language": "Python",
     "updated_at": "2026-03-15T05:16:15Z",
-    "size": 6,
+    "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -125,7 +125,7 @@
     "description": "Windows service configuration, management, or hardening scripts.",
     "language": null,
     "updated_at": "2026-03-15T05:16:14Z",
-    "size": 8,
+    "size": 9,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -135,7 +135,7 @@
     "description": "PowerShell Windows Security Suite - comprehensive security hardening and protection scripts.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:13Z",
-    "size": 12,
+    "size": 13,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -145,7 +145,7 @@
     "description": "PowerShell script to harden privilege rights via secedit - SeDenyNetworkLogonRight, SeDenyRemoteInteractiveLogonRight, SeDenyRemoteLogonRight for *S-1-5-11 (Users). Clears SeRemoteShutdownPrivilege, SeRemoteLogonRight, etc.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:11Z",
-    "size": 2,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -155,7 +155,7 @@
     "description": "PowerShell script to harden Windows remote access - disable RDP, Remote Assistance, block RDP/VNC/TeamViewer/AnyDesk ports, disable Administrator account, restrict remote software, disable UPnP, enable Defender.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:11Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -165,7 +165,7 @@
     "description": "Screen saver configuration or custom screen saver for Windows.",
     "language": null,
     "updated_at": "2026-03-15T05:16:09Z",
-    "size": 9032,
+    "size": 9033,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -175,7 +175,7 @@
     "description": "Batch script to remove non-current local user accounts - parses and , deletes users whose RID does not match current user. Enables UAC (EnableLUA=1).",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:16:08Z",
-    "size": 2,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -185,7 +185,7 @@
     "description": "PowerShell threat response/retaliation script - automated response to detected threats (part of GSecurity suite).",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:07Z",
-    "size": 6,
+    "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -195,7 +195,7 @@
     "description": "Registry/Group Policy or script-based restrictions for Windows.",
     "language": null,
     "updated_at": "2026-03-15T05:16:06Z",
-    "size": 10,
+    "size": 11,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -205,7 +205,7 @@
     "description": "A lightweight, efficient RAM optimization tool for Windows that continuously clears standby memory to keep your system running smoothly. Perfect for systems with limited RAM or when running memory-intensive applications.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:16:05Z",
-    "size": 82,
+    "size": 83,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -215,7 +215,7 @@
     "description": "Rainmeter skins, layouts, or configuration for the Rainmeter desktop customization tool.",
     "language": null,
     "updated_at": "2026-03-15T05:16:03Z",
-    "size": 7707,
+    "size": 7708,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -225,7 +225,7 @@
     "description": "Python script to fetch and rotate HTTP/HTTPS proxies from free proxy lists (ProxyScrape, free-proxy-list.net, etc.).",
     "language": "Python",
     "updated_at": "2026-03-15T05:16:02Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -235,7 +235,7 @@
     "description": "Windows provisioning and setup scripts/packages.",
     "language": null,
     "updated_at": "2026-03-15T05:16:01Z",
-    "size": 6,
+    "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -245,7 +245,7 @@
     "description": "PowerShell script to block all remote access - RDP, Remote Assistance, PSRemoting, WinRM, Telnet, SMB, Wake-on-LAN, SSH, VNC, UPnP. Adds firewall rules.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:16:00Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -255,7 +255,7 @@
     "description": "PowerShell system-wide ad blocker for Windows - uses DNS policy and persistent routes. Downloads EasyList, EasyPrivacy, AdGuard filters.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:59Z",
-    "size": 759,
+    "size": 760,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -265,7 +265,7 @@
     "description": "PDQ Deploy/Inventory or similar - batch script for software deployment or system management.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:15:58Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -285,7 +285,7 @@
     "description": "One script, run once as Administrator-no input. Sets up password rotation so the user can log in with Enter (or auto-login); the password is randomized after 1 minute and every 10 minutes, then set back to blank at logoff.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:55Z",
-    "size": 5,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -295,7 +295,7 @@
     "description": "PAC (Proxy Auto-Config) file or scripts - used for ad blocking (see ads-blocker/Pac) or proxy configuration.",
     "language": "JavaScript",
     "updated_at": "2026-03-15T05:15:54Z",
-    "size": 14,
+    "size": 15,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -305,7 +305,7 @@
     "description": "Batch script - Windows Update / SoftwareDistribution cleanup - stops wuauserv/BITS, deletes SoftwareDistribution, DISM component cleanup, ResetBase.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:15:53Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -315,7 +315,7 @@
     "description": "PowerShell script to disable NULL sessions for SMB - RestrictAnonymous, RestrictNullSessAccess. Also sets battery power plan.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:52Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -325,7 +325,7 @@
     "description": "Notes and documentation for Gorstak projects.",
     "language": null,
     "updated_at": "2026-03-15T05:15:51Z",
-    "size": 453,
+    "size": 454,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -335,7 +335,7 @@
     "description": "Browser-focused network traffic monitor - allows user-navigated domains + dependencies; blocks other connections. Creates firewall rules.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:49Z",
-    "size": 5,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -345,7 +345,7 @@
     "description": "Batch script for network repair - NLA probing, BFE/Dnscache/MpsSvc/DHCP/DUSM services, adapter disable/enable cycle.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:15:48Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -355,7 +355,7 @@
     "description": "PowerShell script to disable unwanted network bindings - File Sharing, MS Client, QoS, LLTD, IPv6, etc. Runs at startup as SYSTEM.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:47Z",
-    "size": 3,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -365,7 +365,7 @@
     "description": "Batch script for network registry and service configuration - SetACL on Network key, devcon, backup permissions, DHCP, DUSM, NLA, etc.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:15:47Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -375,7 +375,7 @@
     "description": "Microsoft Management Console (MSC) scripts or console snap-in configurations.",
     "language": null,
     "updated_at": "2026-03-15T05:15:45Z",
-    "size": 11,
+    "size": 12,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -385,7 +385,7 @@
     "description": "Batch script to unload and remove BFS and UnionFS minifilter drivers - , takeown, icacls, delete.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:15:44Z",
-    "size": 2,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -395,7 +395,7 @@
     "description": "PowerShell FileSystemWatcher that locks down permissions on new/changed files in Users, Program Files - Console Logon (S-1-2-1) only.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:43Z",
-    "size": 3,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -405,7 +405,7 @@
     "description": "PHP web application - profile system with install, database, helpers, create_profile.",
     "language": "PHP",
     "updated_at": "2026-03-15T05:15:41Z",
-    "size": 21,
+    "size": 22,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -415,7 +415,7 @@
     "description": "- Try it live",
     "language": "JavaScript",
     "updated_at": "2026-03-15T05:15:40Z",
-    "size": 55,
+    "size": 56,
     "default_branch": "master",
     "latestReleaseUrl": null
   },
@@ -425,7 +425,7 @@
     "description": "PowerShell script that removes shortcuts (.lnk) pointing to network paths () - protects against UNC path abuse and SMB attacks.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:39Z",
-    "size": 3,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -435,7 +435,7 @@
     "description": "An anti-keylogger protection tool that injects random fake keystrokes to poison captured data - you type normally, keyloggers see garbage.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:38Z",
-    "size": 7,
+    "size": 8,
     "default_branch": "main",
     "latestReleaseUrl": "https://github.com/Gorstak-Zadar/KeyScrambler/releases/tag/1.0"
   },
@@ -445,7 +445,7 @@
     "description": "Registry tweak to remove Explorer/Windows bloat - AppEvents schemes, Explorer sounds, Control Panel clutter, personalization keys, Bluetooth, Quick Actions, etc.",
     "language": null,
     "updated_at": "2026-03-15T05:15:37Z",
-    "size": 14,
+    "size": 16,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -455,7 +455,7 @@
     "description": "PowerShell script to download malware blocklists and block IPs via Windows Firewall - Spamhaus DROP, Emerging Threats, Zeus/Feodo Trackers, Talos, FireHOL.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:36Z",
-    "size": 5,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -465,7 +465,7 @@
     "description": "Infinity.BS - Game script/module (likely Blizzard/StarCraft related). Contains trigger/script definitions.",
     "language": "Bikeshed",
     "updated_at": "2026-03-15T05:15:35Z",
-    "size": 11,
+    "size": 12,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -475,7 +475,7 @@
     "description": "Registry tweak with P3P (Platform for Privacy Preferences) blocklist - blocks tracking/ad domains (180solutions, 2every, ad networks, etc.) in Internet Settings.",
     "language": null,
     "updated_at": "2026-03-15T05:15:33Z",
-    "size": 842,
+    "size": 843,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -485,7 +485,7 @@
     "description": "A comprehensive PowerShell script designed to harden Windows systems against common attack vectors, including those commonly seen in penetration testing platforms like HackTheBox. This script implements defense-in-depth security measures to protect against unauthorized access, credential theft, privilege escalation, and lateral movement attacks.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:32Z",
-    "size": 39,
+    "size": 40,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -495,7 +495,7 @@
     "description": "Python script to connect to free VPN servers from VPNGate API - selects closest server by ping, uses Windows for connection.",
     "language": "Python",
     "updated_at": "2026-03-15T05:15:31Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -505,7 +505,7 @@
     "description": "PowerShell antivirus/EDR-style guard - file monitoring, hash scanning, CIRCL/MalwareBazaar lookups, quarantine, scheduled task persistence.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:30Z",
-    "size": 6,
+    "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -515,7 +515,7 @@
     "description": "P2P chat - Python client, server, peer scripts for chat/messaging.",
     "language": "Python",
     "updated_at": "2026-03-15T05:15:29Z",
-    "size": 5,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -525,7 +525,7 @@
     "description": "<div align=center>",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:28Z",
-    "size": 868,
+    "size": 869,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -535,7 +535,7 @@
     "description": "Windows Security Baseline - Group Policy templates and scripts for export/import of security policies.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:15:27Z",
-    "size": 438,
+    "size": 440,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -545,7 +545,7 @@
     "description": "<p align=center>",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:25Z",
-    "size": 5291,
+    "size": 5302,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -555,7 +555,7 @@
     "description": "Batch script to import security policy via LGPO (Local Group Policy Object) using .",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:15:24Z",
-    "size": 247,
+    "size": 248,
     "default_branch": "main",
     "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GS/releases/tag/2.0"
   },
@@ -565,7 +565,7 @@
     "description": "Python script to run executables in a sandbox - uses Wine (Linux/macOS) and Docker for Windows/Linux game isolation.",
     "language": "Python",
     "updated_at": "2026-03-15T05:15:23Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -575,7 +575,7 @@
     "description": "PowerShell security rules manager - downloads and applies YARA, Sigma, Snort rules; enforces ASR (Attack Surface Reduction) rules.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:21Z",
-    "size": 11,
+    "size": 13,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -585,7 +585,7 @@
     "description": "| Feature | Description |",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:20Z",
-    "size": 25,
+    "size": 26,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -595,7 +595,7 @@
     "description": "PowerShell performance tweak utility - CPU, memory, network, BCD, power plan, and Explorer optimizations.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:19Z",
-    "size": 4,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -605,7 +605,7 @@
     "description": "Profile README",
     "language": null,
     "updated_at": "2026-03-15T05:15:18Z",
-    "size": 0,
+    "size": 2,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -615,7 +615,7 @@
     "description": "PowerShell script to download, install, and configure Kodi with addon repositories (The Crew, Venom, Seren).",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:16Z",
-    "size": 3,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -625,7 +625,7 @@
     "description": "Browser-focused network traffic monitor - allows user-navigated URLs + dependencies; blocks unauthorized connections. Creates firewall rules per-connection.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:15Z",
-    "size": 7,
+    "size": 8,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -635,7 +635,7 @@
     "description": "Registry tweak to bypass geographic/geo-blocking for applications or network services.",
     "language": null,
     "updated_at": "2026-03-15T05:15:14Z",
-    "size": 2,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -645,7 +645,7 @@
     "description": "Gorstak Endpoint Detection and Response - detection and hardening modules, hash lookup, YARA scanning, behavioral detection, WMI protection",
     "language": "C#",
     "updated_at": "2026-03-15T05:15:13Z",
-    "size": 2753,
+    "size": 2754,
     "default_branch": "main",
     "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GEDR/releases/tag/v14.0.0"
   },
@@ -655,7 +655,7 @@
     "description": "A lightweight, privacy-focused web browser built with Python and PyQt6 - featuring tabbed browsing, built-in ad blocking, credential management, and DLL injection protection.",
     "language": "Python",
     "updated_at": "2026-03-15T05:15:11Z",
-    "size": 20,
+    "size": 21,
     "default_branch": "main",
     "latestReleaseUrl": "https://github.com/Gorstak-Zadar/GBrowser/releases/tag/5.2"
   },
@@ -665,7 +665,7 @@
     "description": "Gaming-related PowerShell and Python scripts - Bufferbloat, savegame backup/restore, Infinity.BS, and more.",
     "language": "Bikeshed",
     "updated_at": "2026-03-15T05:15:10Z",
-    "size": 16,
+    "size": 17,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -675,7 +675,7 @@
     "description": "Multi-tier caching system for gaming performance - RAM + SSD tiers, LRU eviction, symlinks for Steam/Epic games.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:09Z",
-    "size": 9,
+    "size": 10,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -685,7 +685,7 @@
     "description": "Registry tweak to configure Windows Firewall - SharedAccess service, domain/private profiles, Remote Admin, File & Print, RDP, UPnP.",
     "language": null,
     "updated_at": "2026-03-15T05:15:08Z",
-    "size": 274,
+    "size": 275,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -695,7 +695,7 @@
     "description": "<div align=center>",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:07Z",
-    "size": 11,
+    "size": 12,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -705,7 +705,7 @@
     "description": "PowerShell script that terminates non-console RDP/session logins - keeps only console (local) sessions. Runs as a background job every 5 seconds.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:05Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -715,7 +715,7 @@
     "description": "PowerShell script that detects and unloads (ELF-similar) DLLs injected into browsers - protection against surveillance/injection.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:04Z",
-    "size": 3,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -725,7 +725,7 @@
     "description": "PowerShell script to monitor and remove unauthorized drivers - whitelists Microsoft, Realtek, Dolby, Intel, AMD, NVIDIA, MediaTek; removes all others.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:03Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -745,7 +745,7 @@
     "description": "Windows Encrypted DNS Configurator - PowerShell script for DNS over HTTPS (DoH) and DNS over TLS (DoT) with Cloudflare (primary) and Google (secondary).",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:15:01Z",
-    "size": 5,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -755,7 +755,7 @@
     "description": "Registry tweak to disable the Recycle Bin and enable confirm-on-delete for permanent file deletion.",
     "language": null,
     "updated_at": "2026-03-15T05:14:59Z",
-    "size": 2,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -765,7 +765,7 @@
     "description": "PowerShell script to list devices and set permissions using SetACL - restricts device registry access to Console Logon group only.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:58Z",
-    "size": 299,
+    "size": 301,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -775,7 +775,7 @@
     "description": "Windows ISO debloat presets - NTLite, WinReducer, custom workflows for creating lightweight Windows installs.",
     "language": null,
     "updated_at": "2026-03-15T05:14:57Z",
-    "size": 35,
+    "size": 37,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -785,7 +785,7 @@
     "description": "PowerShell script to detect and remove InProcServer32/InprocHandler32 custom controls from the registry (WOW6432Node CLSID).",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:56Z",
-    "size": 3,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -795,7 +795,7 @@
     "description": "C scripts or C-based utilities for Gorstak projects.",
     "language": null,
     "updated_at": "2026-03-15T05:14:55Z",
-    "size": 1,
+    "size": 2,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -805,7 +805,7 @@
     "description": "PowerShell script that monitors active TCP connections for hostnames containing - crude XSS/injection payload guard.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:54Z",
-    "size": 6,
+    "size": 8,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -815,7 +815,7 @@
     "description": "PowerShell script to harden local credential protection - LSASS PPL, credential caching, and cached logon controls.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:52Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -825,7 +825,7 @@
     "description": "Wrapper or bridge for CPython - C/Python integration utilities.",
     "language": null,
     "updated_at": "2026-03-15T05:14:51Z",
-    "size": 1,
+    "size": 2,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -835,7 +835,7 @@
     "description": "PowerShell script to overwrite telemetry files with random data on an hourly schedule - privacy-focused telemetry corruption.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:50Z",
-    "size": 5,
+    "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -845,7 +845,7 @@
     "description": "PowerShell utility to backup, monitor, and reset Chrome cookie databases - with scheduled tasks for logon, startup, and periodic checks.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:49Z",
-    "size": 5,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -855,7 +855,7 @@
     "description": "Registry tweak for COM (Component Object Model) configuration on Windows.",
     "language": null,
     "updated_at": "2026-03-15T05:14:47Z",
-    "size": 2,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -865,7 +865,7 @@
     "description": "Batch script to modify UAC Consent behavior and permissions on Windows.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:14:47Z",
-    "size": 2,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -875,7 +875,7 @@
     "description": "Real-time file monitor for , , , - uses CIRCL (whitelist) and MalwareBazaar (blacklist), no VirusTotal.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:45Z",
-    "size": 6,
+    "size": 7,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -885,7 +885,7 @@
     "description": "Registry tweak for certificate or TLS/SSL configuration on Windows.",
     "language": null,
     "updated_at": "2026-03-15T05:14:44Z",
-    "size": 4,
+    "size": 6,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -895,7 +895,7 @@
     "description": "PowerShell script to apply privacy and security settings to Chromium-based browsers (Chrome, Edge, etc.) - WebRTC, remote desktop, and plugins.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:43Z",
-    "size": 7,
+    "size": 9,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -915,7 +915,7 @@
     "description": "C# WPF browser application using WebView2, with tabs, bookmarks, history, downloads, and extensions.",
     "language": "C#",
     "updated_at": "2026-03-15T05:14:40Z",
-    "size": 14,
+    "size": 16,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -925,7 +925,7 @@
     "description": "A curated collection of browser bookmarks with a PowerShell utility to optimize file size by removing embedded icons.",
     "language": "HTML",
     "updated_at": "2026-03-15T05:14:39Z",
-    "size": 207,
+    "size": 208,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -935,7 +935,7 @@
     "description": "Batch script to apply BCD (Boot Configuration Data) tweaks that affect low-level boot and virtualization settings.",
     "language": "Batchfile",
     "updated_at": "2026-03-15T05:14:38Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -945,7 +945,7 @@
     "description": "Registry tweak to configure Windows Base Filtering Engine firewall service parameters.",
     "language": null,
     "updated_at": "2026-03-15T05:14:37Z",
-    "size": 11,
+    "size": 12,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -955,7 +955,7 @@
     "description": "A comprehensive system benchmarking tool written entirely in PowerShell - test your CPU, Memory, Disk, GPU, and Network performance with a single script.",
     "language": "C#",
     "updated_at": "2026-03-15T05:14:36Z",
-    "size": 60,
+    "size": 61,
     "default_branch": "main",
     "latestReleaseUrl": "https://github.com/Gorstak-Zadar/Benchmark/releases/tag/v3.0"
   },
@@ -965,7 +965,7 @@
     "description": "PowerShell script to enumerate and clean suspicious Boot Configuration Data (BCD) entries on Windows.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:35Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -975,7 +975,7 @@
     "description": "Python script to flatten a folder structure by moving all files from subfolders into a single target directory with deduplicated filenames.",
     "language": "Python",
     "updated_at": "2026-03-15T05:14:33Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -985,7 +985,7 @@
     "description": "HTML page for Babylonian or alternative time system display.",
     "language": "HTML",
     "updated_at": "2026-03-15T05:14:32Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -995,7 +995,7 @@
     "description": "Author: Gorstak | Part of the GEDR Security Suite",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:31Z",
-    "size": 3,
+    "size": 4,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -1005,7 +1005,7 @@
     "description": "AutoHotkey scripts - includes MuteDiscord.ahk for Discord mute control.",
     "language": "AutoHotkey",
     "updated_at": "2026-03-15T05:14:30Z",
-    "size": 2,
+    "size": 3,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -1015,7 +1015,7 @@
     "description": "Windows PowerShell utility to enable Acoustic Echo Cancellation (AEC) and Noise Suppression on all audio devices.",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:29Z",
-    "size": 4,
+    "size": 5,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -1025,7 +1025,7 @@
     "description": "<div align=center>",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:28Z",
-    "size": 833,
+    "size": 843,
     "default_branch": "main",
     "latestReleaseUrl": null
   },
@@ -1035,7 +1035,7 @@
     "description": "<p align=center>",
     "language": "PowerShell",
     "updated_at": "2026-03-15T05:14:26Z",
-    "size": 256,
+    "size": 257,
     "default_branch": "main",
     "latestReleaseUrl": null
   }
